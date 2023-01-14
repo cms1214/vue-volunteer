@@ -39,6 +39,11 @@
       <el-col class="login" :span="4" :xs="24" :offset="4">
         <div>
           <el-avatar class="loginarea loginimg" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
+          <div class="card">
+            <el-button type="primary" icon="el-icon-user">登录/注册</el-button>
+            <el-button type="primary" icon="el-icon-user">个人中心</el-button>
+            <el-button type="danger">退出登录</el-button>
+          </div>
         </div>
       </el-col>
     </el-row>
@@ -180,36 +185,80 @@ export default {
     100% {margin-top: 0px;}
 }
 
+/* 登录块 */
+
 .login{
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.login .el-avatar{
-  z-index: 1;
-  transition: 0.2s;
+.login>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width: 100px;
+  position: relative;
 }
 
-/* .login .el-avatar:hover{
+.login .el-avatar{
+  height: 40px;
+  width: 40px;
   transition: .2s;
-  margin: 20px 20px 0px 0px;
-  height: 80px;
-  width: 80px;
-} */
+}
 
 
 
-.login .el-card{
+.login .card{
+  z-index: 5;
+  /* height: 150px; */
+  width: 200px;
+  padding: 30px 0 10px 0;
+  background-color:white;
+
   position: absolute;
-  display: none;
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%,0);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+
+  border: 1px solid #E3E5E7;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+
+  /* display: none; */
   opacity: 0;
   transition: .2s;
-  top:90px;
-  left:30px;
+
+  pointer-events: none;
+}
+
+.login .card button{
+  margin: 0px;
+  width: 70%;
+  margin-bottom: 20px;
 }
 
 
+/* 鼠标移入登录块 */
+.login>div:hover .el-avatar{
+  height: 50px;
+  width: 50px;
+}
+
+.login>div:hover .card{
+  display: flex;
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+/* 进度条 */
 .el-row:last-child{
   background-color: #f5f5f5;
   box-shadow:inset 0 1px 2px rgb(0 0 0 / 10%)

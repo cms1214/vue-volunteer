@@ -35,6 +35,21 @@ a{
   text-decoration: none;
 }
 
+/* 滚动条 */
+/* body{
+  overflow-y: overlay;
+}
+body::-webkit-scrollbar {
+  width: 20px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.2);
+}
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+} */
 
 
 /* 组件 */

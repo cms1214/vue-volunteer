@@ -14,12 +14,14 @@ export default {
 
 <style scoped>
 .title .t1{
+  transition: .2s;
   font-size: 1.5rem;
   /* font-size:24px; */
   color: #777777;
   letter-spacing: 5px;
 }
 .title .t2{
+  transition: .2s;
   font-size: 3.375rem;
   /* font-size: 54px; */
   font-weight: 600;
@@ -29,9 +31,11 @@ export default {
 
 @media (max-width: 900px) {
   .title .t1{
+    /* transition: 1s; */
     font-size: 1.2rem;
   }
   .title .t2{
+    /* transition: 1s; */
     font-size: 3rem;
   }
 }
