@@ -107,7 +107,9 @@ export default {
 </script>
 
 <style scoped>
-
+#head{
+  z-index:5
+}
 
 
 /* 左侧logo */

@@ -31,11 +31,9 @@ export default {
 
 @media (max-width: 900px) {
   .title .t1{
-    /* transition: 1s; */
     font-size: 1.2rem;
   }
   .title .t2{
-    /* transition: 1s; */
     font-size: 3rem;
   }
 }

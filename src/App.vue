@@ -1,19 +1,19 @@
 <template>
   <div id="app" ref="main">
     <MainHead/>
-    <TitleText title="相关文件" subtitle="来看一看" />
+    <CarouselShow title="相关文件" subtitle="来看一看" />
   </div>
 </template>
 
 <script>
-import TitleText from './components/TitleText'
+import CarouselShow from './components/CarouselShow'
 import MainHead from './components/MainHead'
 
 export default {
   name: 'App',
   components: {
-    TitleText,
-    MainHead
+    MainHead,
+    CarouselShow
   }
 }
 
